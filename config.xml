@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+    Default config.xml for automatic phonegap builds
+
+    @attr {id} unique id of the application
+    @attr {version} major/minor/patch style version
+    @attr {versionCode} versionCode is optional and Android only
+
+    @lastmodification: 04/22/2013
+-->
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.prototype.enyoboot"
+        version   = "0.0.1">
+
+    <!-- 
+        App name 
+    -->
+    <name>Enyo Boot</name>
+
+    <!-- 
+        App description 
+    -->
+    <description>
+        Enyo Boot Test
+    </description>
+
+    <!-- 
+        preferences section
+        @attr {name} key name
+        @attr {value} key value
+    -->
+
+        <!-- 
+            @description: version of phonegap
+            @value: 2.x.x
+        -->
+        <preference name="phonegap-version" value="2.5.0" />
+
+        <!--
+            @description: orientation, deafult means both landscape and portrait
+            @value: landscape, portrait
+        -->
+        <preference name="orientation" value="default" />
+
+        <!-- 
+            @description: target device, default is universal
+            @value: handset, tablet, or universal
+        -->
+        <preference name="target-device" value="universal" />
+
+        <!--
+            @description: hides the status bar at the top of the screen; is false by default
+            @value: true, false
+        -->
+        <preference name="fullscreen" value="false" />
+
+        <!--
+            @description: controls whether the screen "bounces" when scrolled beyond the top or bottom on iOS. By default, the bounce is on
+            @value: true, false
+        -->
+        <preference name="webviewbounce" value="true" />
+
+        <!--
+            @description: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen. default is false
+            @value: true, false
+        -->
+        <preference name="prerendered-icon" value="false" />
+
+        <!--
+            @description: if set to true, all links (even with target set to blank) will open in the app's webview. default is false
+            @value: true, false
+        -->
+        <preference name="stay-in-webview" value="false" />
+
+        <!--
+            @description: status bar style. default is 'default'
+            @value: default, black-opaque or black-translucent
+        -->
+        <preference name="ios-statusbarstyle" value="default" />
+
+        <!--
+            @description: controls whether certain data types (such as phone numbers and dates) 
+                          are automatically turned into links by the system. Defaults to "true" (as does the system web view)
+            @value: true, false
+        -->
+        <preference name="detect-data-types" value="true" />
+
+        <!--
+            @description: if set to true, app will terminate when suspended, for example when home button is pressed. default is false
+            @value: true, false
+        -->
+        <preference name="exit-on-suspend" value="false" />
+
+        <!--
+            @description: if set to false, the spinner won't appear on the splash screen during app loading. default is true
+            @value: true, false
+        -->
+        <preference name="show-splash-screen-spinner" value="true" />
+
+        <!--
+            @description: if set to false, the splash screen must be hidden using a JavaScript API. default is true
+            @value: true, false
+        -->
+        <preference name="auto-hide-splash-screen" value="true" />
+
+    <!-- 
+        Icons section
+    -->
+    <!--<icon src="assets/imgs/dist/icons/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="assets/imgs/dist/icons/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="assets/imgs/dist/icons/icon@2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="assets/imgs/dist/icons/icon-72@2x.png" gap:platform="ios" width="144" height="144" />-->
+
+    <!-- 
+        Splash section
+    -->
+    <!--<gap:splash src="assets/imgs/dist/splash/Default~iphone.png" width="320" height="480" />
+    <gap:splash src="assets/imgs/dist/splash/Default-Landscape@2x~ipad.png" width="2048" height="1496" />
+    <gap:splash src="assets/imgs/dist/splash/Default@2x~iphone.png" width="640" height="960" />
+    <gap:splash src="assets/imgs/dist/splash/Default-568h@2x~iphone.png" width="640" height="1136" />
+    <gap:splash src="assets/imgs/dist/splash/Default-Landscape~ipad.png" width="1024" height="768" />
+    <gap:splash src="assets/imgs/dist/splash/Default-Portrait@2x~ipad.png" width="1536" height="2008" />
+    <gap:splash src="assets/imgs/dist/splash/Default-Portrait~ipad.png" width="768" height="1024" />-->
+
+    <!--
+        Phonegap API features
+    -->
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+
+    <access origin="*" />
+    
+</widget>
