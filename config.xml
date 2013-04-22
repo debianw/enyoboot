@@ -36,7 +36,7 @@
             @description: version of phonegap
             @value: 2.x.x
         -->
-        <preference name="phonegap-version" value="2.5.0" />
+        <preference name="phonegap-version" value="2.3.0" />
 
         <!--
             @description: orientation, deafult means both landscape and portrait
